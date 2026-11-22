@@ -1,0 +1,11 @@
+# xrctl (`xrctl`)
+
+> Clean-room C17 4-vendor AR glasses CLI and stdio MCP server for XREAL, VITURE, Rokid, and RayNeo over USB-HID and XREAL One link-local TCP (`169.254.2.1:52999`).
+
+## Capabilities
+- **4-Vendor Hardware Control**: `probe`, `profiles`, `status`, `mode` (`2d|3d-sbs|3d-half-sbs` with `lstat` snapshot and 15s `sigaction` auto-revert), `restore`, `tint` (`0..3`/`4..100`/`0%..100%`/`clear|mid|dark|opaque`), `refresh` (`60|90|120`), `brightness` (`0..100`), `wear` sensor, and 1000Hz `imu` Mahony quaternion JSONL stream in an O(1) power-of-2 ring buffer.
+- **AI-Agent Native**: `--describe` JSON capability manifest, `--json` `CLIEnvelope` (`schema_version: 1`), `--from-json -` UNIX composability (`edidsmith | xrctl | depthpipe`), deterministic exit codes (`0..5, 130`), non-TTY `--yes` fail-closed guard, and stdio JSON-RPC 2.0 `xrctl mcp`.
+
+## Install & Pricing
+- Homebrew: `brew install raydeoliveira/tap/xrctl`
+- Agent Skill: `SKILL.md` (`name: xrctl`) | MCP Manifest: `server.json` (`io.github.raydeoliveira/xrctl`)

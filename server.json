@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.raydeoliveira/xrctl",
+  "title": "xrctl",
+  "description": "4-vendor AR glasses CLI & MCP server for 2D/3D SBS rollback, tint, 120Hz, and 1000Hz IMU.",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/raydeoliveira/xrctl",
+  "repository": {
+    "url": "https://github.com/raydeoliveira/xrctl",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/raydeoliveira/xrctl/releases/download/v0.1.0/xrctl-0.1.0-macos-arm64.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "fb59d562e6b92ab754f737944a7eb85c18a09961b6a4f548daeaef4bbd5bdc0e",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "XRCTL_LICENSE_KEY",
+          "description": "Optional Polar.sh Pro license key unlocking hardware writes and 1000Hz IMU streaming.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
