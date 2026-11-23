@@ -1,5 +1,7 @@
 # xrctl
 
+> **Product Hub:** [raymonddeoliveira.com/software](https://www.raymonddeoliveira.com/software#xrctl) · **Buy xrctl Pro ($19):** [Polar Checkout](https://buy.polar.sh/polar_cl_xBuVDUMFZ51noqtr3hX44WD57cnL7LkElA3lL2Hy2Dc) · **Complete 4-CLI Bundle ($49, save $57):** [Bundle Checkout](https://buy.polar.sh/polar_cl_KTtCY3iQC4bzjqp93aC6LCog8UZqzZzuDgkAs3BvF74) · **Verified MCP:** [Glama](https://glama.ai/mcp/servers/raydeoliveira/xrctl) · **Free Core:** `brew tap raydeoliveira/tap && brew install xrctl`
+
 Clean-room C17 CLI and stdio MCP server for XREAL, VITURE, Rokid, and RayNeo AR glasses on macOS and Linux/SteamOS over USB-HID and XREAL One link-local TCP (`169.254.2.1:52999`).
 
 `xrctl` compiles to a **145,360-byte (~142 KB)** stripped Mach-O `arm64` binary with **4.5 ms** average `--version` cold start and zero third-party runtime dependencies.
