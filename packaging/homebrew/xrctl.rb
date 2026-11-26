@@ -1,19 +1,13 @@
 class Xrctl < Formula
-  desc "C17 4-vendor AR glasses CLI & MCP server (2D/3D SBS rollback, tint, 120Hz, 1000Hz IMU)"
+  desc "Control AR glasses display modes and read motion sensors via CLI or MCP"
   homepage "https://github.com/raydeoliveira/xrctl"
+  url "https://github.com/raydeoliveira/xrctl/releases/download/v0.1.0/xrctl-0.1.0-macos-arm64.tar.gz"
   version "0.1.0"
+  sha256 "0d9dca7be08825a470fbdf4760da2b99cb23bd4bcc78565b25c50b12b91f7df0"
   license :cannot_represent
 
-  on_macos do
-    depends_on arch: :arm64
-    depends_on macos: :sonoma
-    url "https://github.com/raydeoliveira/xrctl/releases/download/v0.1.0/xrctl-0.1.0-macos-arm64.tar.gz"
-    sha256 "0d9dca7be08825a470fbdf4760da2b99cb23bd4bcc78565b25c50b12b91f7df0"
-  end
-
-  on_linux do
-    url "https://github.com/raydeoliveira/xrctl/releases/download/v0.1.0/xrctl-0.1.0-linux-x86_64.tar.gz"
-  end
+  depends_on arch: :arm64
+  depends_on macos: :sonoma
 
   def install
     bin.install "xrctl"

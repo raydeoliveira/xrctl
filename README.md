@@ -20,15 +20,18 @@ Clean-room C17 CLI and stdio MCP server for XREAL, VITURE, Rokid, and RayNeo AR 
 
 ## Install & Uninstall
 
-### Build From Source (macOS arm64 & Linux)
-```bash
-cd projects/xrctl
-make test           # ASan + UBSan C & E2E test suite
+The Homebrew package runs on Apple Silicon with macOS Sonoma (14) or later. List XREAL device profiles without connecting glasses.
+
+```sh
+brew install raydeoliveira/tap/xrctl
+xrctl profiles --vendor xreal --json
 ```
 
-### Homebrew
-```bash
-brew install raydeoliveira/tap/xrctl
+The release page provides the macOS archive, MCP bundle and SHA-256 checksums. [Version 0.1.0 downloads](https://github.com/raydeoliveira/xrctl/releases/tag/v0.1.0)
+
+### Uninstall
+
+```sh
 brew uninstall xrctl
 ```
 
