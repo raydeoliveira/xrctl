@@ -1,8 +1,8 @@
 ---
 name: xrctl
 description: >-
-  Controls XREAL, VITURE, Rokid, and RayNeo AR glasses on macOS and Linux/SteamOS
-  over USB-HID and XREAL One link-local TCP (169.254.2.1:52999). Supports 2D/3D SBS
+  Provides device profiles for XREAL, VITURE, Rokid and RayNeo AR glasses
+  over USB-HID and XREAL One link-local TCP. Model-specific features include 2D/3D SBS
   mode switching with 15-second auto-revert, electrochromic lens tint, 60/90/120Hz
   refresh control, 1000Hz 6DoF/9DoF IMU quaternion streaming, wear sensor queries,
   --from-json - UNIX pipes, and built-in stdio MCP tools.
@@ -11,6 +11,9 @@ description: >-
 # Skill: xrctl (`xrctl`)
 
 ## Install
+
+The v0.1.0 CLI and MCP bundle run on Apple Silicon with macOS 14 or later. Linux and SteamOS support is source-only. Device profiles and fixtures can be inspected without an attached pair of glasses.
+
 ```bash
 brew install raydeoliveira/tap/xrctl
 # Inspect capability manifest:

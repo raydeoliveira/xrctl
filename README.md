@@ -37,6 +37,12 @@ brew uninstall xrctl
 
 ## Quick Start (Human & `--json` Agent Usage)
 
+With xrctl installed, add the [agent instructions](SKILL.md) to your project for AR glasses profiles and display mode previews.
+
+```sh
+npx skills add raydeoliveira/xrctl
+```
+
 Probe attached devices or run against deterministic hardware-free fixtures:
 ```bash
 xrctl --version --json
